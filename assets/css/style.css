@@ -312,9 +312,7 @@ ul.slider1{
 .section7 .row{
     margin-top: 30px;
 }
-.section7 .image-cart{
-    position: relative;
-}
+
 .section7 .detail-cart{
     position: absolute;
     top: 0;
@@ -359,6 +357,47 @@ ul.slider1{
 
 .section7 .col-md-4{
     padding: 5px;
+}
+.image-cart{
+    height:300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.img1{
+    background-image: url('./../../assets/img/Layer21.png');
+
+}
+.img2{
+    background-image: url('./../../assets/img/Layer 22.png');
+
+}
+.img3{
+    background-image: url('./../../assets/img/Layer 24.png');
+
+}
+.img4{
+    background-image: url('./../../assets/img/Layer 25.png');
+
+}
+.img5{
+    background-image: url('./../../assets/img/Layer 23.png');
+
+}
+.img6{
+    background-image: url('./../../assets/img/Layer 26.png');
+
+}
+.img7{
+    background-image: url('./../../assets/img/Layer 27.png');
+
+}
+.img8{
+    background-image: url('./../../assets/img/Layer 28.png');
+
+}
+.img9{
+    background-image: url('./../../assets/img/Layer 30.png');
 }
 /*--------------- End Section 7 ----------------------*/
 
