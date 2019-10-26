@@ -1,10 +1,10 @@
 @font-face {
-    font-family: 'vazir';
-    src: url("./fonts/CalibriRegular.ttf");
+    font-family: 'calibri';
+    src: url("../font/CalibriRegular.ttf");
 }
 
 body{
-    font-family: 'vazir' !important;
+    font-family: 'calibri' !important;
     overflow-x: hidden;
 }
 
@@ -24,6 +24,14 @@ ul.slider{
 
 ul.slider1{
     padding: 0;
+}
+
+.my-slider1 li{
+    display: none;
+}
+
+.my-slider1 li.active1 {
+    display: block;
 }
 
 /*---------------Head----------------------*/
@@ -139,7 +147,7 @@ ul.slider1{
     padding-right: 155px;
 }
 .pt-section2 .video{
-    margin: 7px 0 150px 55px;
+    margin-bottom: 70px;
 }
 /*---------------End Section 2----------------------*/
 
@@ -327,6 +335,7 @@ ul.slider1{
     height: 93%;
     color: white;
 }
+
 .border-cart h4{
     margin-top: 30px;
 }
@@ -366,7 +375,6 @@ ul.slider1{
 
 .img1{
     background-image: url('./../../assets/img/Layer21.png');
-
 }
 .img2{
     background-image: url('./../../assets/img/Layer 22.png');
@@ -439,19 +447,19 @@ ul.slider1{
 .position2{
     position: relative;
 }
-.position2 i:first-child{
+.position2 .prev{
     position: absolute;
     top: 290px;
     left: 160px;
     font-size: 30px;
 }
-.position2 i:last-child{
+.position2 .next{
     position: absolute;
     top: 290px;
     right: 160px;
     font-size: 30px;
 }
-.position2 i:hover{
+.position2 span:hover{
     color: #F96B61;
     cursor: pointer;
     font-size: 40px;

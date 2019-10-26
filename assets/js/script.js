@@ -5,11 +5,12 @@ var $imageCart=$('.image-cart');
 
 var $slider=$('.my-slider');
 var $left=$('.an-left');
-
-var $right=$('.an-right')
-
+var $right=$('.an-right');
 
 
+var $slider1=$('.my-slider1');
+var $left1=$('.prev');
+var $right1=$('.next');
 
 
 $(document).ready(function () {
@@ -44,11 +45,11 @@ $(document).ready(function () {
 
         }
         
-    )
+    );
 
-    $right.on('click',nextSlide)
+    $right.on('click',nextSlide);
 
-    $left.on('click',prevSlide)
+    $left.on('click',prevSlide);
 
 
     function nextSlide() {
@@ -59,7 +60,7 @@ $(document).ready(function () {
             $currentActive.removeClass('active')
         }else {
 
-            $slider.find('li:first-child').addClass('active')
+            $slider.find('li:first-child').addClass('active');
             $currentActive.removeClass('active')
         }
         console.log($currentActive);
@@ -74,7 +75,7 @@ $(document).ready(function () {
                 $currentActive.removeClass('active')
             }else {
 
-                $slider.find('li:last-child').addClass('active')
+                $slider.find('li:last-child').addClass('active');
                 $currentActive.removeClass('active')
             }
             console.log($currentActive);
@@ -96,3 +97,55 @@ $(document).ready(function () {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$right1.on('click',nextSlide1);
+
+$left1.on('click',prevSlide1);
+
+
+function nextSlide1() {
+    var $currentActive1=$slider1.find('li.active1');
+
+    if ($currentActive1.next('li').length){
+        $currentActive1.next('li').addClass('active1');
+        $currentActive1.removeClass('active1')
+    }else {
+
+        $slider1.find('li:first-child').addClass('active1');
+        $currentActive1.removeClass('active1')
+    }
+    console.log($currentActive1);
+
+}
+
+function prevSlide1() {
+    var $currentActive1=$slider1.find('li.active1');
+
+    if ($currentActive1.prev('li').length){
+        $currentActive1.prev('li').addClass('active1');
+        $currentActive1.removeClass('active1')
+    }else {
+
+        $slider1.find('li:last-child').addClass('active1');
+        $currentActive1.removeClass('active1')
+    }
+    console.log($currentActive1);
+
+}
